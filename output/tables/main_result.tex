@@ -1,0 +1,22 @@
+\begin{table}[h]
+\centering
+\caption{Effect of Proposition 99 on California Per-Capita Cigarette Sales}
+\label{tab:main}
+\small
+\begin{tabular}{lccc}
+\toprule
+Method & Replication & Paper & Std.\ Error \\
+\midrule
+Synthetic DiD (SDID)            & $-15.6$ & $-15.6$ & $(8.4)$ \\
+Synthetic Control (SC)          & $-19.5$ & $-19.6$ & $(9.7)$ \\
+Difference-in-Differences (DID) & $-27.3$ & $-27.3$ & $(15.3)$ \\
+De-meaned SC (DIFP)             & $-11.1$ & $-11.1$ & $(9.3)$ \\
+Matrix Completion (MC)          & ---     & $-20.2$ & $(11.5)$ \\
+\midrule
+\multicolumn{4}{l}{\footnotesize Notes: Outcome is per-capita cigarette sales in packs per year.} \\
+\multicolumn{4}{l}{\footnotesize Sample: 39 U.S.\ states, 1970--2000. Treatment: California post-1989.} \\
+\multicolumn{4}{l}{\footnotesize Standard errors via placebo method (200 replications).} \\
+\multicolumn{4}{l}{\footnotesize MC not replicated: depends on MCPanel R package (see text).} \\
+\bottomrule
+\end{tabular}
+\end{table}
